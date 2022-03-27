@@ -6,13 +6,15 @@ function App() {
   const [show, setShow] = useState(false);
 
   const props = useSpring({
-    right: show ? window.innerWidth - 300 : window.innerWidth,
+    right: show ? window.innerWidth - 200 : window.innerWidth,
     position: "fixed",
     top: 0,
     backgroundColor: "#212021",
     height: "100vh",
-    width: "300px",
+    width: "200px",
     zIndex: 1,
+    boxSizing: "border-box",
+    padding: "60px 20px 20px 20px",
   });
 
   const onClickParams = [

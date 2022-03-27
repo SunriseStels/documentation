@@ -114,10 +114,6 @@ code {
   border-radius: 3px;
 }
 
-.sidebar {
-  padding-top: 60px;
-}
-
 .sidebar a {
   padding: 8px 8px 8px 25px;
   text-decoration: none;
@@ -144,7 +140,7 @@ code {
 .close {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 40px;
   opacity: 0.5;
   transition: 0.3s ease-in-out;
   cursor: pointer;
