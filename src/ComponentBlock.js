@@ -1,4 +1,4 @@
-const ComponentBlock = ({ name, description, params, code, status }) => {
+const ComponentBlock = ({ name, description, link, params, code, status }) => {
   const copyToBoard = (e) => {
     navigator.clipboard.writeText(e.target.innerHTML);
   };
@@ -6,7 +6,7 @@ const ComponentBlock = ({ name, description, params, code, status }) => {
   return (
     <>
       <div className={"block"}>
-        <a name={"button"}>
+        <a name={link}>
           <h1>{name}</h1>
         </a>
         <p>{description}</p>
@@ -82,6 +82,7 @@ const ComponentBlock = ({ name, description, params, code, status }) => {
             <div className={"params_title"}>
               <span className={"params_title__light"}>{item.name}</span>
             </div>
+            <div className={"params_type"}>{item.type}</div>
             <div className={"params_snippets"}>
               {item.variants.map((variant, idx) => (
                 <span key={idx} className={"snippet"} onClick={copyToBoard}>

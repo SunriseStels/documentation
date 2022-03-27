@@ -50,10 +50,12 @@ code {
 .example {
   display: block;
   overflow-x: auto;
-  background: #d8d8d8;
+  /* background: #d8d8d8; */
+  background-color: #ffffff;
   color: #40608c;
   padding: 0.5em;
   text-align: left;
+  font-size: 14px;
 }
 
 .params {
@@ -75,7 +77,11 @@ code {
 }
 
 .params_title {
-  flex: 2;
+  flex: 1;
+}
+
+.params_type {
+  flex: 1;
 }
 
 .params_snippets {
@@ -83,13 +89,13 @@ code {
 }
 
 .params_desc {
-  flex: 4;
+  flex: 2;
 }
 
 .snippet {
   background-color: #4f73dc;
   color: #fff;
-  padding: 3px;
+  padding: 4px 10px;
   border-radius: 3px;
   margin: 5px;
   display: inline-block;
@@ -104,7 +110,7 @@ code {
 .params_title__light {
   background-color: grey;
   color: #fff;
-  padding: 3px;
+  padding: 4px 10px;
   border-radius: 3px;
 }
 
@@ -121,7 +127,7 @@ code {
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 36px;
+  padding: 8px 8px 8px 25px;
   text-decoration: none;
   font-size: 18px;
   color: #ffffff;
